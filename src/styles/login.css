@@ -1,0 +1,40 @@
+picture > img {
+    width: clamp(80px, 10vw, 120px);
+}
+
+.login-filho {
+    width: clamp(280px, 90%, 400px);
+    border-radius: var(--borda-suave);
+    box-shadow: var(--sombra-media);
+    text-align: center;
+}
+
+.email input,
+.login input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    outline: none;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+.botao > button {
+    width: 60%;
+    background-color: var(--cor-primaria);
+    border-radius: var(--borda-suave);
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+
+button:hover {
+     background-color: #fc3609;
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primaria);
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/src/assets/font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --cor-primaria: #f2522e;
+    --cor-secundaria: #F8F9FA;
+    
+    --sombra-suave: 0 2px 6px rgba(0, 0, 0, 0.15);      /* leve, para cards pequenos */
+    --sombra-media: 0 4px 12px rgba(0, 0, 0, 0.2);     /* média, para cards maiores */
+    --sombra-intensa: 0 8px 20px rgba(0, 0, 0, 0.25);  /* forte, para destaque */
+    --sombra-hover: 0 6px 18px rgba(0, 0, 0, 0.22);    /* sombra ao passar o mouse */
+
+    --font-primaria: 'Roboto';
+    --borda-suave: 6px;          /* borda padrão */
+    --borda-arredondada: 12px;   /* borda mais arredondada */
+    --borda-pill: 50px;          
+}
+
