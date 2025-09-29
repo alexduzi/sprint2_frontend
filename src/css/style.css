@@ -1,0 +1,210 @@
+/* --- ESTILOS GERAIS E VARIÁVEIS DE COR --- */
+:root {
+    --swift-orange: #F2522E;
+    --swift-dark-text: #20272B;
+    --swift-light-bg: #F8F9FA;
+    --swift-white: #FFFFFF;
+    --swift-grey-text: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--swift-light-bg);
+    color: var(--swift-dark-text);
+}
+
+.main-content {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* --- COMPONENTES GERAIS (Cards, Botões, etc.) --- */
+.card-custom {
+    background-color: var(--swift-white);
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.card-header-custom {
+    background-color: var(--swift-orange);
+    color: var(--swift-white);
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-swift-primary {
+    background-color: var(--swift-orange);
+    border-color: var(--swift-orange);
+    color: var(--swift-white);
+}
+
+.btn-swift-primary:hover {
+    background-color: #d14125;
+    border-color: #d14125;
+    color: var(--swift-white);
+}
+
+.text-swift-orange {
+    color: var(--swift-orange) !important;
+}
+
+.text-muted {
+    color: var(--swift-grey-text) !important;
+}
+
+.progress-bar-swift {
+    background-color: var(--swift-orange);
+}
+
+/* --- PÁGINA DE DESAFIOS --- */
+.nav-tabs .nav-link {
+    color: var(--swift-grey-text);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--swift-orange);
+    border-color: #dee2e6 #dee2e6 var(--swift-white);
+    font-weight: bold;
+}
+
+.desafio-concluido {
+    opacity: 0.7;
+    background-color: #f8f9fa;
+}
+
+.desafio-concluido .card-title {
+    color: var(--swift-grey-text);
+}
+
+.recompensa {
+    font-size: 0.9rem;
+}
+
+/* --- PÁGINA DE RANKING --- */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--swift-grey-text);
+}
+
+.ranking-voce {
+    background-color: var(--swift-orange) !important;
+    color: var(--swift-white) !important;
+    font-weight: bold;
+}
+
+.ranking-voce td {
+    background-color: transparent !important;
+}
+
+.table-hover>tbody>tr.ranking-voce:hover {
+    color: var(--swift-white) !important;
+}
+
+.table img.rounded-circle {
+    border: 2px solid #dee2e6;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+tr.table-warning img.rounded-circle,
+tr.ranking-voce img.rounded-circle {
+    border-color: var(--swift-orange);
+}
+
+/* --- PÁGINA DE RELATÓRIOS --- */
+.kpi-card .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--swift-dark-text);
+}
+
+/* --- PÁGINA DE CONFIGURAÇÕES --- */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 0.8;
+}
+
+.form-check.form-switch {
+    padding-left: 3.5em;
+}
+
+.form-check-label {
+    padding-top: 2px;
+}
+
+/* --- PÁGINA DE CURSOS --- */
+.course-featured {
+    border-color: var(--swift-orange);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.course-featured .img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.course-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* --- PÁGINA DE CLIENTES --- */
+form h5 {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--swift-dark-text);
+}
+
+.form-control[readonly] {
+    cursor: not-allowed;
+}
+
+/* --- PÁGINA DE TICKETS --- */
+.table .badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+}
+
+/* --- PÁGINA DE NOTIFICAÇÕES --- */
+.timeline-date {
+    font-weight: bold;
+    color: var(--swift-grey-text);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #dee2e6;
+}
+
+.notification-card .card-body {
+    padding: 1rem;
+}
+
+.notification-card.unread {
+    border-left: 4px solid var(--swift-orange);
+}
