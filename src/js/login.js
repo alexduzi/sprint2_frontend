@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Tenta fazer login
         const resultado = Auth.login(email, senha);
-
+        
         if (resultado.sucesso) {
             // Login deu certo!
             mostrarMensagem(resultado.mensagem, 'sucesso');
