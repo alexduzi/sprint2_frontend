@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Se não tiver ninguém logado, volta para o login
     if (!usuario) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
         return;
     }
 
-    console.log(`✅ Usuário logado: ${usuario.nome}`);
+    console.log(`Usuário logado: ${usuario.nome}`);
     
     // Atualiza o nome no menu do topo
     const elementoNome = document.querySelector('.nav-link.dropdown-toggle');
