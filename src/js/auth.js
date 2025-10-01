@@ -77,7 +77,7 @@ function logout() {
     localStorage.removeItem('usuarioLogado');
     
     // Volta para a tela de login
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 // FUNÇÃO: Retorna os dados do usuário que está logado
